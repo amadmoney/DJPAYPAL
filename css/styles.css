@@ -1,0 +1,13 @@
+
+.contact, .buy, .stream, .insta, .download, .live2, .twitter, .mmlogo, .tklogo {filter: invert(100%) brightness(200%); transition: filter 0.4s ease;}.contact:hover,
+.buy:hover,
+.stream:hover,
+.insta:hover,
+.download:hover,
+.live2:hover,
+.twitter:hover,
+.mmlogo:hover,
+.tklogo:hover {filter: sepia(100%) saturate(10000%) hue-rotate(-10deg) brightness(40%) contrast(150%);}
+.body-initial {background-color: rgba(0,0,0,1); position: static;}.silex-id-1478366444112-1 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366444112-0 {background-color: transparent; min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1474394621033-3 {position: static; margin-top: -1px;}.silex-id-1474394621032-2 {background-color: transparent; min-height: 600px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1478366450713-3 {background-color: transparent; position: static; margin-top: -1px;}.silex-id-1478366450713-2 {background-color: transparent; min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1734311321863-1 {width: 37px; height: 37px; position: absolute; top: 66.10269927978516px; left: 100px;}.silex-id-1734311352350-2 {width: 42px; height: 42px; position: absolute; top: 61.018455505371094px; left: 1002.5029296875px;}.silex-id-1734311378030-3 {width: 581px; height: 278px; position: absolute; top: -10.01409912109375px; left: 425.3970642089844px;}.silex-id-1734311411075-4 {width: 362.1094970703125px; height: 335.76571981792745px; position: absolute; top: 32px; left: 200px;}.silex-id-1734311439649-5 {width: 540px; height: 327px; position: absolute; top: 212.99444580078125px; left: 503.78758239746094px;}.silex-id-1734311507861-7 {width: 211px; height: 137px; position: absolute; top: 335.9931945800781px; left: 188px;}.silex-id-1734311535321-8 {width: 293px; height: 119px; position: absolute; top: 429.0064697265625px; left: 132px;}.silex-id-1734311555222-9 {width: 270px; height: 242px; position: absolute; top: 324.9095153808594px; left: 409.0205383300781px;}.silex-id-1734311590478-10 {width: 312px; height: 144px; position: absolute; top: 390.0057373046875px; left: 644px;}@media only screen and (max-width: 480px) {}
+.text-element > .silex-element-content {font-family: 'Roboto', sans-serif;}
+.website-width {width: 1200px;}@media (min-width: 481px) {.silex-editor {min-width: 1400px;}}body.silex-runtime {opacity: 1;}
