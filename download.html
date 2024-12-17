@@ -141,6 +141,32 @@
       text-align: center;
       padding: 20px;
     }
+    
+ /* Adjust layout for screens smaller than 768px (typical mobile) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduce padding */
+    align-items: center;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .list {
+    font-size: 1.2rem; /* Reduce text size */
+    line-height: 1.5;
+  }
+
+  .background-video {
+    object-fit: cover; /* Ensure video still works */
+    height: auto;
+  }
+
+ 
+    
   </style>
 </head>
 <body>
@@ -183,10 +209,10 @@
 
   <!-- Video container with autoplay -->
   <div class="video-container">
-     <video autoplay loop muted playsinline class="background-video">
-  <source src="https://amadmoney.github.io/DJPAYPAL/DOWNLOAD_BG.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    <video autoplay loop muted class="background-video">
+      <source src="https://amadmoney.github.io/DJPAYPAL/DOWNLOAD_BG.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
 </body>
