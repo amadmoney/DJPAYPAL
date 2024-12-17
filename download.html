@@ -166,6 +166,27 @@
     height: 100%;
   }
 
+
+/* Home Button Styling */
+.home-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #39FF14; /* Neon green */
+  color: black;
+  font-family: "Special Elite", system-ui;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999; /* Ensures it stays on the topmost layer */
+  animation: fly 5s linear infinite, glow 5s linear infinite; /* Use existing animations */
+}
+
+.home-button:hover {
+  background-color: #2ecc71; /* Slightly darker green */
+}
  
     
   </style>
@@ -184,7 +205,7 @@
   <!-- Scalable container -->
   <div class="container">
     <div class="title">
-      <h1>You Can Download All <br> of DJ PAYPAL's Music<br><br>Here's How:</h1>
+      <h1>You Can Download All of DJ PAYPAL's Music<br><br>Here's How:</h1>
     </div>
     <div class="list">
       1. Download/setup Soulseek<br>
@@ -212,6 +233,9 @@
       <source src="https://amadmoney.github.io/DJPAYPAL/DOWNLOAD_BG.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+
+<!-- Return Home Button -->
+<button class="home-button" onclick="window.location.href='index.html'">HELLO</button>
   </div>
 
 </body>
