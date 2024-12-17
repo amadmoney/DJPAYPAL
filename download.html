@@ -13,34 +13,12 @@
 
   <style>
 
-    /* Home Button Styling */
-    .home-button {
-      position: fixed; /* Keeps the button fixed in the center of the viewport */
-      top: 20%; /* Center vertically */
-      left: 50%; /* Center horizontally */
-      background-color: #39FF14; /* Neon green */
-      color: black;
-      font-family: "Special Elite", system-ui;
-      font-size: 1.5rem;
-      padding: 10px 30px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      z-index: 9999; /* Ensures it appears above ALL content */
-      animation: glow 5s linear infinite; /* Add the glow animation */
-      text-transform: uppercase;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    .home-button:hover {
-      background-color: #2ecc71; /* Darker green on hover */
-    }
+ 
 
     /* General styling */
-    body, html {
-      margin: 0;
-      padding: 0;
+      body, html {
+      margin: 10px;
+      padding: 40px;
       height: 100%;
       color: white;
       font-family: "Special Elite", system-ui;
@@ -52,7 +30,7 @@
     .container {
       width: calc(100% - 100px); /* Account for padding */
       height: calc(100% - 100px); /* Account for padding */
-      padding: 200px; /* Space around the content */
+      padding: 100px; /* Space around the content */
       box-sizing: border-box; /* Include padding in dimensions */
       display: flex;
       flex-direction: column;
@@ -77,6 +55,30 @@
       text-align: left;
       font-size: 1.5rem;
       line-height: 2;
+    }
+
+  /* Home Button Styling */
+    .home-button {
+      position: absolute; /* Keeps the button fixed in the center of the viewport */
+      top: 15%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      background-color: #39FF14; /* Neon green */
+      color: black;
+      font-family: "Special Elite", system-ui;
+      font-size: 1.5rem;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      z-index: 9999; /* Ensures it appears above ALL content */
+      animation: glow 5s linear infinite; /* Add the glow animation */
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .home-button:hover {
+      background-color: #2ecc71; /* Darker green on hover */
     }
 
     /* Animations for images */
@@ -240,12 +242,7 @@
   <div id="ssk2">
     <img src="https://amadmoney.github.io/DJPAYPAL/soulseek-png-30385_2.png" alt="Soulseek Logo 2" width="200" height="200">
   </div>
-  <div id="ssk3">
-    <img src="https://amadmoney.github.io/DJPAYPAL/soulseek-png-30385_2.png" alt="Soulseek Logo" width="200" height="200">
-  </div>
-  <div id="ssk4">
-    <img src="https://amadmoney.github.io/DJPAYPAL/soulseek-png-30385.png" alt="Soulseek Logo" width="200" height="200">
-  </div>
+
 
   <!-- Video container with autoplay -->
   <div class="video-container">
@@ -257,4 +254,3 @@
 
 </body>
 </html>
-
