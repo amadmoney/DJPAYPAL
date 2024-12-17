@@ -13,6 +13,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
   <style>
+
+
+/* Home Button Styling */
+
+.home-button {
+  position: fixed; /* Stays in place */
+  top: 100px; /* Distance from the top */
+  right: 600px; /* Distance from the right */
+  background-color: #39FF14; /* Neon green */
+  color: black;
+  font-family: "Special Elite", system-ui;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 9999; /* Ensures it stays on the topmost layer */
+  animation glow 5s linear infinite; /* Existing animations */
+}
+
+.home-button:hover {
+  background-color: #2ecc71; /* Slightly darker green */
+}
     /* General styling */
     body, html {
       margin: 0;
@@ -85,6 +108,7 @@
     #ssk2, #ssk4, #ssk6 {
       animation-direction: reverse;
     }
+
 
     /* Responsive font scaling */
     @media (max-width: 768px) {
@@ -165,34 +189,11 @@
     object-fit: cover; /* Ensure video still works */
     height: 100%;
   }
-
-
-/* Home Button Styling */
-.home-button {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: #39FF14; /* Neon green */
-  color: black;
-  font-family: "Special Elite", system-ui;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 9999; /* Ensures it stays on the topmost layer */
-  animation: fly 5s linear infinite, glow 5s linear infinite; /* Use existing animations */
-}
-
-.home-button:hover {
-  background-color: #2ecc71; /* Slightly darker green */
-}
  
     
   </style>
 </head>
 <body>
-
 
   <!-- Background Video -->
   <div class="video-container">
@@ -202,8 +203,15 @@
     </video>
   </div>
 
+ <!-- Button -->
+<div class="button">
+<button class="home-button" onclick="window.location.href='index.html'">Home </button>
+</div>
+
+
   <!-- Scalable container -->
   <div class="container">
+
     <div class="title">
       <h1>You Can Download All of DJ PAYPAL's Music<br><br>Here's How:</h1>
     </div>
@@ -215,28 +223,29 @@
     </div>
   </div>
 
+
   <!-- Animated images -->
   <div id="ssk1">
     <img src="https://amadmoney.github.io/DJPAYPAL/soulseek-png-30385.png" alt="Soulseek Logo" width="200" height="200">
   </div>
   <div id="ssk2">
     <img src="https://amadmoney.github.io/DJPAYPAL/soulseek-png-30385_2.png" alt="Soulseek Logo 2" width="200" height="200">
+  <div id="ssk3">
+    <img src="https://amadmoney.github.io/DJPAYPAL/soulseek-png-30385_2.png" alt="Soulseek Logo" width="200" height="200">
   </div>
-
-
-  <!-- Black overlay -->
+   <div id="ssk4">
+    <img src="https://amadmoney.github.io/DJPAYPAL/soulseek-png-30385.png" alt="Soulseek Logo" width="200" height="200">
+  </div>
+</div>
   
-
-  <!-- Video container with autoplay -->
+<!-- Video container with autoplay -->
   <div class="video-container">
     <video autoplay loop muted class="background-video">
       <source src="https://amadmoney.github.io/DJPAYPAL/DOWNLOAD_BG.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
-<!-- Return Home Button -->
-<button class="home-button" onclick="window.location.href='index.html'">HELLO</button>
-  </div>
+
 
 </body>
 </html>
