@@ -22,7 +22,6 @@
   position: fixed; /* Keeps the button fixed in the center of the viewport */
   top: 20%; /* Center vertically */
   left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Offset by 50% of the button dimensions */
   background-color: #39FF14; /* Neon green */
   color: black;
   font-family: "Special Elite", system-ui;
@@ -42,9 +41,6 @@
   background-color: #2ecc71; /* Darker green on hover */
 }
 
-.home-button:hover {
-  background-color: #2ecc71; /* Slightly darker green on hover */
-}
     /* General styling */
     body, html {
       margin: 0;
@@ -123,8 +119,11 @@
 
  /* Responsive text adjustments */
     @media (max-width: 768px) {
+
+
+
       .container {
-        padding: 80px;
+        padding: 50px;
         align-items: center;
         text-align: center;
       }
@@ -240,14 +239,16 @@
 
 
 /* Remove animation and reposition the home button on mobile screens */
+
     @media (max-width: 667px) {
       .home-button {
         top: 10px;
         left: 50%;
-        transform: translateX(-50%);
+        transform:;
         font-size: 1rem;
         padding: 10px 20px;
-        animation: glow 5s linear infinite; /* Keep only the glow effect */
+        animation: glow 5s linear infinite; 
+/* Keep only the glow effect */
       }
 
 
