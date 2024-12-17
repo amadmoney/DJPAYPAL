@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Download</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
-
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,12 +32,16 @@
       width: 100%;
       box-sizing: border-box;
       margin-top: 10%; /* Leave space for the home button at the top */
+      position: relative; /* Ensure the container can hold absolutely positioned elements */
+      z-index: 0; /* Make sure it's below the animated images */
     }
 
     /* Title Styling */
     .title {
       text-align: left; /* Left-align title */
       margin-bottom: 20px;
+      position: relative; /* Ensure title doesn't get covered by images */
+      z-index: 1; /* Make sure the title is above the container */
     }
 
     .title h1 {
@@ -89,13 +92,13 @@
     /* Animations for Images */
     @keyframes fly1 {
       0% { transform: translate(0, 0); }
-      50% { transform: translate(50%, 50%); }
-      100% { transform: translate(100%, 0); }
+      50% { transform: translate(calc(50vw - 10vw), 50%); }
+      100% { transform: translate(100vw, 0); }
     }
 
     @keyframes fly2 {
-      0% { transform: translate(100%, 0); }
-      50% { transform: translate(50%, 50%); }
+      0% { transform: translate(100vw, 0); }
+      50% { transform: translate(calc(50vw - 10vw), 50%); }
       100% { transform: translate(0, 0); }
     }
 
@@ -107,6 +110,7 @@
       max-width: 20vw; /* Prevent stretching */
       max-height: 20vw; /* Prevent stretching */
       animation: glow 5s linear infinite;
+      z-index: 10; /* Ensure the images stay on top of everything */
     }
 
     #ssk1 {
@@ -163,6 +167,8 @@
         width: 15vw; /* Adjust image size on tablets */
         max-width: 15vw; /* Prevent stretching */
         max-height: 15vw; /* Prevent stretching */
+        top: 0; /* Keep images above content */
+        z-index: 10; /* Ensure the images stay on top of the content */
       }
 
       .home-button {
@@ -193,6 +199,8 @@
         width: 12vw; /* Smaller images for very small screens */
         max-width: 12vw; /* Prevent stretching */
         max-height: 12vw; /* Prevent stretching */
+        top: 0; /* Keep images above content */
+        z-index: 10; /* Ensure the images stay on top of the content */
       }
 
       .home-button {
