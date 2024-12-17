@@ -117,6 +117,8 @@
     }
 
 
+
+
     /* Responsive font scaling */
     @media (max-width: 768px) {
       .title h1 {
@@ -197,6 +199,20 @@
     height: 100%;
   }
  
+
+
+/* Remove animation and reposition the home button on mobile screens */
+    @media (max-width: 768px) {
+      .home-button {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        padding: 10px 20px;
+        animation: glow 5s linear infinite; /* Keep only the glow effect */
+      }
+
+
     
   </style>
 </head>
@@ -258,4 +274,3 @@
 
 </body>
 </html>
-
