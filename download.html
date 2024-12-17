@@ -88,15 +88,15 @@
 
     /* Animations for Images */
     @keyframes fly1 {
-      0% { top: 0%; left: 0%; }
-      50% { top: 50%; left: 50%; }
-      100% { top: 0%; left: 100%; }
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(50%, 50%); }
+      100% { transform: translate(100%, 0); }
     }
 
     @keyframes fly2 {
-      0% { top: 0%; left: 100%; }
-      50% { top: 50%; left: 50%; }
-      100% { top: 0%; left: 0%; }
+      0% { transform: translate(100%, 0); }
+      50% { transform: translate(50%, 50%); }
+      100% { transform: translate(0, 0); }
     }
 
     /* Images with Glow Effect */
@@ -104,6 +104,8 @@
       position: absolute;
       width: 20vw; /* Responsive image width */
       height: auto;
+      max-width: 20vw; /* Prevent stretching */
+      max-height: 20vw; /* Prevent stretching */
       animation: glow 5s linear infinite;
     }
 
@@ -159,6 +161,8 @@
 
       #ssk1, #ssk2 {
         width: 15vw; /* Adjust image size on tablets */
+        max-width: 15vw; /* Prevent stretching */
+        max-height: 15vw; /* Prevent stretching */
       }
 
       .home-button {
@@ -187,6 +191,8 @@
 
       #ssk1, #ssk2 {
         width: 12vw; /* Smaller images for very small screens */
+        max-width: 12vw; /* Prevent stretching */
+        max-height: 12vw; /* Prevent stretching */
       }
 
       .home-button {
