@@ -1,100 +1,118 @@
-<!doctype html>
-<html lang="">
-<head>
+<!doctype html><html class="" lang=""><head>
     <meta charset="UTF-8">
     <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
     <meta name="generator" content="Silex v2.2.14">
+    <!-- End of generator meta tag -->
     <script src="js/jquery.js"></script>
+    
+    
     <script src="js/front-end.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/front-end.css">
+
+    
     <script class="silex-script"></script>
     
     <title>DJ PAYPAL</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/script.js"></script>
-    <link href="css/styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
-    <style>
-        /* Reset styles for body and html to remove any spacing */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden; /* Prevent scrolling */
-        }
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet">
 
-        /* Overlay styles */
-        #orientation-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; /* Set to 100% for full coverage */
-            height: 100%; /* Set to 100% for full coverage */
-            background: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            display: none; /* Initially hidden */
-        }
 
-        #orientation-overlay img {
-            max-width: 100%; /* Adjust to ensure it doesn't overflow */
-            max-height: 100%;
-        }
-    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+  /* Reset styles for body and html to remove any spacing */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
 
-    <!-- Orientation Overlay -->
-    <div id="orientation-overlay">
-        <img src="ROTATE_WEB.gif" alt="Rotate your phone">
-    </div>
+  /* Overlay styles */
+  #orientation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set to 100% for full coverage */
+    height: 100%; /* Set to 100% for full coverage */
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none; /* Initially hidden */
+  }
 
-    <script>
-        const overlay = document.getElementById('orientation-overlay');
+  #orientation-overlay img {
+    max-width: 100%; /* Adjust to ensure it doesn't overflow */
+    max-height: 100%;
+  }
+</style>
 
-        // Function to check and toggle the overlay based on orientation and device type
-        function checkOrientation() {
-            // Only show overlay on devices that are not mobile/tablets
-            if (window.innerHeight > window.innerWidth && window.innerWidth > 768) {
-                overlay.style.display = 'flex'; // Show the overlay in portrait mode, but not on mobile/tablets
-            } else {
-                overlay.style.display = 'none'; // Hide the overlay in landscape or mobile/tablets
-            }
-        }
 
-        // Listen for orientation changes
-        window.addEventListener('resize', checkOrientation);
-        window.addEventListener('load', checkOrientation);
-    </script>
 
-    <style>
-        body { opacity: 0; transition: .25s opacity ease; }
-    </style>
-</head>
+  <!-- Orientation Overlay -->
+  <div id="orientation-overlay">
+    <img src="ROTATE_WEB.gif" alt="Rotate your phone">
+  </div>
+
+  <script>
+    const overlay = document.getElementById('orientation-overlay');
+
+    // Function to check and toggle the overlay based on orientation
+    function checkOrientation() {
+      if (window.innerHeight > window.innerWidth) {
+        overlay.style.display = 'flex'; // Show the overlay in portrait mode
+      } else {
+        overlay.style.display = 'none'; // Hide the overlay in landscape mode
+      }
+    }
+
+    // Listen for orientation changes
+    window.addEventListener('resize', checkOrientation);
+    window.addEventListener('load', checkOrientation);
+  </script>
+
+
+<style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
 <body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-dj-paypal">
-    <!-- Content Sections -->
-    <section class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable page-page-1 page-dj-paypal paged-element paged-element-visible">
-        <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width">
-            <a class="editable-style image-element silex-id-1734311352350-2 tklogo" href="http://teklife57.com/"><img src="assets/teklifelogo-1000x1000.png"></a>
-            <a class="editable-style image-element silex-id-1734311321863-1 mmlogo" href="https://mallmusicinc.bandcamp.com/album/strong-paq"><img src="assets/mmlogo.png"></a>
-        </div>
-    </section>
+    
 
-    <section class="container-element editable-style silex-id-1474394621033-3 section-element prevent-resizable page-page-1 page-dj-paypal paged-element paged-element-visible">
-        <div class="editable-style silex-element-content silex-id-1474394621032-2 container-element website-width selected">
-            <a class="editable-style image-element silex-id-1734311439649-5 stream" href="https://www.youtube.com/djpaypal"><img src="assets/stream.png"></a>
-            <a class="editable-style image-element silex-id-1734311378030-3 contact" href="mailto:info@mallmusicinc.com"><img src="assets/contact.png"></a>
-            <a class="editable-style image-element silex-id-1734311411075-4 buy" href="djpaypal.bandcamp.com"><img src="assets/buy.png"></a>
-            <a class="editable-style image-element silex-id-1734311507861-7 insta" href="https://www.instagram.com/djpaypal/"><img src="assets/INSTA.png"></a>
-            <a class="editable-style image-element silex-id-1734311535321-8 twitter" href="https://twitter.com/djpaypal"><img src="assets/twitter.png"></a>
-            <a class="editable-style image-element silex-id-1734311555222-9 live2" href="https://www.songkick.com/artists/6664459-dj-paypal"><img src="assets/Live.png"></a>
-            <a class="editable-style image-element silex-id-1734311590478-10 download" href="download.html"><img src="assets/download.png"></a>
-        </div>
-    </section>
-</body>
-</html>
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable page-page-1 page-dj-paypal paged-element paged-element-visible">
+        <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><a class="editable-style image-element silex-id-1734311352350-2 tklogo" href="http://teklife57.com/"><img src="assets/teklifelogo-1000x1000.png"></a><a class="editable-style image-element silex-id-1734311321863-1 mmlogo" href="https://mallmusicinc.bandcamp.com/album/strong-paq"><img src="assets/mmlogo.png"></a></div>
+    </section><section class="container-element editable-style silex-id-1474394621033-3 section-element prevent-resizable page-page-1 page-dj-paypal paged-element paged-element-visible">
+        
+    <div class="editable-style silex-element-content silex-id-1474394621032-2 container-element website-width selected"><a class="editable-style image-element silex-id-1734311439649-5 stream" href="https://www.youtube.com/djpaypal"><img src="assets/stream.png"></a><a class="editable-style image-element silex-id-1734311378030-3 contact" href="mailto:info@mallmusicinc.com"><img src="assets/contact.png"></a><a class="editable-style image-element silex-id-1734311411075-4 buy" href="djpaypal.bandcamp.com"><img src="assets/buy.png"></a><a class="editable-style image-element silex-id-1734311507861-7 insta" href="https://www.instagram.com/djpaypal/"><img src="assets/INSTA.png"></a><a class="editable-style image-element silex-id-1734311535321-8 twitter" href=" twitter.com/djpaypal"><img src="assets/twitter.png"></a><a class="editable-style image-element silex-id-1734311555222-9 live2" href="https://www.songkick.com/artists/6664459-dj-paypal"><img src="assets/Live.png"></a><a class="editable-style image-element silex-id-1734311590478-10 download" href="download.html"><img src="assets/download.png"></a></div></section></body></html>
