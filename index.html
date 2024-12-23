@@ -43,37 +43,9 @@
     max-height: 120%;
   }
 
-  /* Ensure full screen on mobile */
-  @supports (-webkit-touch-callout: none) {
-    #orientation-overlay {
-      height: 100vh; /* Use viewport height */
-    }
-  }
 
-  /* Fix for iOS Safari browser toolbar issue */
-  :root {
-    --vh: 1vh; /* Set a custom viewport height unit */
-  }
-
-  #orientation-overlay {
-    height: calc(var(100vh, 1vh) * 100); /* Use custom height variable */
-  }
 </style>
 
-<script>
-  // Adjust custom viewport height unit for mobile browsers
-  function setViewportHeight() {
-    const vh = window.innerHeight * 0.01; // Calculate 1% of the viewport height
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-
-  // Update the viewport height on load and resize
-  window.addEventListener('load', setViewportHeight);
-  window.addEventListener('resize', setViewportHeight);
-</script>
-
-
-  <!-- Your website content here -->
 
   <!-- Orientation Overlay -->
   <div id="orientation-overlay">
