@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Download</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global styling */
+    body, html {
+      margin: 1px;
+      padding: 20px;
+      height: 100%;
+      color: white;
+      font-family: "Special Elite", system-ui;
+      overflow: hidden;
+    }
+
+    /* Container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; /* Left align text */
+      padding: 8vw 5vw; /* Adjust padding for all screen sizes */
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 2%; /* Leave space for the home button at the top */
+      position: relative; /* Ensure the container can hold absolutely positioned elements */
+      z-index: 0; /* Make sure it's below the animated images */
+    }
+
+    /* Title Styling */
+    .title {
+      text-align: left; /* Left-align title */
+      margin-bottom: 20px;
+      position: relative; /* Ensure title doesn't get covered by images */
+      z-index: 1; /* Make sure the title is above the container */
+    }
+
+    .title h1 {
+      font-size: clamp(1.5rem, 5vw, 3rem); /* Scalable font size */
+      line-height: 1.2;
+    }
+
+    /* List Styling */
+    .list {
+      text-align: left; /* Left-align the list */
+      font-size: clamp(1rem, 4vw, 1.5rem); /* Scalable font size */
+      line-height: 1.6;
+    }
+
+ 
+
+    /* Background Video */
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .background-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Overlay */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    /* Responsive Layout Adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 8vw 5vw;
+        margin-top: 15%; /* More space for mobile */
+      }
+
+      .title h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive title size */
+      }
+
+      .list {
+        font-size: clamp(1rem, 4vw, 1.2rem); /* Responsive list font size */
+      }
+
+      #ssk1, #ssk2 {
+        width: 15vw; /* Adjust image size on tablets */
+        max-width: 15vw; /* Prevent stretching */
+        max-height: 15vw; /* Prevent stretching */
+        top: 0; /* Keep images above content */
+        z-index: 10; /* Ensure the images stay on top of the content */
+      }
+
+
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 8vw 5vw;
+        margin-top: 20%; /* More space for very small screens */
+      }
+
+      .title h1 {
+        font-size: clamp(1.2rem, 6vw, 2rem); /* Smaller font size for mobile */
+      }
+
+      .list {
+        font-size: clamp(1rem, 5vw, 1.2rem); /* Reduce text size on mobile */
+      }
+
+     
+    
+
+    /* Enable scrolling for landscape view */
+    @media (orientation: landscape) {
+      body, html {
+        overflow: auto; /* Allow scrolling in landscape mode */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+
+
+<!-- Background Video -->
+<div class="video-container">
+  <video autoplay muted playsinline loop class="background-video">
+    <source src="https://amadmoney.github.io/DJPAYPAL/DOWNLOAD_BG.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- Main Content Container -->
+<div class="container">
+  <div class="title">
+    <h1>You Can Download All of<br> DJ PAYPAL's Music<Here's How:</h1>
+  </div>
+  <div class="list">
+    1. Download/setup Soulseek<br>
+    2. Search for DJ PAYPAL + the title of any release<br>
+    3. ??????<br>
+    4. Prophet
+  </div>
+</div>
+
+
+</body>
+</html>
