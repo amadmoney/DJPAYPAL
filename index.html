@@ -31,6 +31,7 @@
             padding: 0;
             width: 100%;
             height: 100%;
+            align-items: center;
         }
 
         /* Overlay styles */
@@ -98,7 +99,7 @@
             if (window.innerHeight > window.innerWidth) {
                 overlay.style.display = 'flex'; // Show the overlay in portrait mode
             } else {
-                overlay.style.display = 'none'; // Hide the overlay in landscape mode
+                overlay.style.display = 'flex''; // Hide the overlay in landscape mode
             }
         }
 
